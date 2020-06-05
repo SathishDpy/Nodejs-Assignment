@@ -37,7 +37,6 @@ app.get("/", function(req,res) {
             }
         }
 });
-    // res.render("index");
 })
 
 // To create the doc 
@@ -51,8 +50,6 @@ app.get("/fullArticle/:data", function(req,res){
         if (!err) {
             if (data) {
                 res.render("Article", {title: data.title, description: data.description})
-            } else {
-                data
             }
         } else {
             res.send("<h1> Some error Happened </h1>")
