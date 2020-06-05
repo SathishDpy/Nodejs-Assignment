@@ -1,0 +1,13 @@
+<%- include('header'); -%>
+
+<% listItems.forEach(function(data) { %>
+    <div class="container">
+        <div class="blog-post">
+            <h1><%= data.title %></h1>    
+            <p><%= data.description.substring(0,100) + "..." %><span><a href="/fullArticle/<%= data._id %>">Read more</a></span></p>
+            
+        </div>        
+    </div>
+<% }); %>
+
+<%- include('footer'); -%>

@@ -1,0 +1,16 @@
+<%- include('header'); -%>
+    <div class="container blog-container">
+        <form action="/" method="POST">
+            <div class="form-group">
+                <label for="inputTitle">Title</label>
+                <input type="text" class="form-control" id="inputTitle" aria-describedby="emailHelp" placeholder="Enter the title" name="title" required>
+            </div>
+            <div class="form-group">
+              <label for="inputTextArea">Blog content</label>
+              <textarea class="form-control" id="inputTextArea" rows="3" name="description" required></textarea>
+            </div>
+    
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+<%- include('footer'); -%>
